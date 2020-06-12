@@ -1,6 +1,4 @@
-
-[[omfang, omfang]]
-== 11. Omfang og eksempel
+== 11. Omfang og eksempel [[omfang, omfang]]
 
 *Hensikt*:
 
