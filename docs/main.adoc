@@ -1,25 +1,45 @@
-include::locale/attributes.adoc[]
-= Spesifikasjonsmal
-:description: Mal for bruk til nye spesifikasjoner som er laga i asciidoc.
+include::../shared/translation.adoc[]
+
+= Veileder for bruk av Forvaltningsstandard for begrepsbeskrivelser
+:description: Veileder for bruk av Forvaltningsstandard for begrepsbeskrivelser
 :doctype: book
 :docinfo:
 :icons: font
 :toc: left
-:toclevels: 3
+:toclevels: 2
 :sectanchors:
-:imagesdir: images
-:title-logo-image: image:digitaliseringsdirektoratet.png[pdfwidth=30vw]
+:title-logo-image: image:../shared/DIGITALISERINGSDIREKTORATET.png[pdfwidth=30vw]
 
-image::digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
+//:sectnums:
 
-Publisert: 2020-03-05
+//:sectnumlevels: 3
 
-WARNING: Dette er mal-dokument for andre spesifikasjoner.
+//{description}
 
-include::shared/download.adoc[]
+// :leveloffset: +1
 
-// Innhold her. Feks ei fil pr kapittel:
-include::forord.adoc[]
-include::kapittel_1.adoc[]
+// Innhold her.
 
-include::shared/stats.adoc[]
+image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
+
+Publisert: 15.03.2019
+
+include::../shared/download.adoc[]
+
+
+include::innledning.adoc[]
+include::eksempler.adoc[]
+include::begrep-term-def.adoc[]
+include::flerspråklighet.adoc[]
+include::term.adoc[]
+include::definisjon.adoc[]
+include::målgruppe.adoc[]
+include::gyldighetsperiode.adoc[]
+include::relasjoner.adoc[]
+include::fagområde.adoc[]
+include::omfang.adoc[]
+include::ansvarlig.adoc[]
+include::begrepssamling.adoc[]
+
+
+include::../shared/stats.adoc[]
