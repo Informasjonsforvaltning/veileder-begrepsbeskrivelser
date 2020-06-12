@@ -1,4 +1,4 @@
-include::locale/attribute.adoc[]
+include::locale/attributes.adoc[]
 
 = Veileder for bruk av Forvaltningsstandard for begrepsbeskrivelser
 :description: Veileder for bruk av Forvaltningsstandard for begrepsbeskrivelser
