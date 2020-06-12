@@ -1,4 +1,3 @@
-
 == 9. Relasjoner mellom begreper
 
 *Hensikt*:
