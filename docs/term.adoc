@@ -1,13 +1,11 @@
-
-[[term, term]]
-== 5. Term (Anbefalt, Tillatt, Frarådet term, Datastrukturterm)
+== 5. Term (Anbefalt, Tillatt, Frarådet term, Datastrukturterm) [[term, term]]
 
 Dette kapitlet omhandler egenskapene til en term: Om en term er en
 ‘anbefalt term’, en ‘tillatt term’, en ‘frarådet term’, eller en
 ‘datastrukturterm’.
 
-[[anbefalt, anbefalt]]
-=== 5.1. Anbefalt term
+
+=== 5.1. Anbefalt term [[anbefalt, anbefalt]]
 
 *Hensikt*:
 
