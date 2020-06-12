@@ -1,11 +1,10 @@
-
 == 1. Innledning
 
 === 1.1. Hensikt
 
 Denne veilederen skal bidra til å gjøre det lettere å forstå og bruke
-https://doc.difi.no/data/forvaltningsstandard-begrepsbeskrivelser/[Forvaltningsstandard
-for begrepsbeskrivelser.]
+https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/[Forvaltningsstandard
+for begrepsbeskrivelser].
 
 === 1.2. Omfang og avgrensning
 
