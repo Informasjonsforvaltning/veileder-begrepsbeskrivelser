@@ -1,6 +1,4 @@
-
-[[gyldighetsperiode, gyldighetsperiode]]
-== 8. Gyldighetsperiode, dato sist oppdatert, erstatter og erstattes av
+== 8. Gyldighetsperiode, dato sist oppdatert, erstatter og erstattes av [[gyldighetsperiode, gyldighetsperiode]]
 
 *Hensikt*:
 
