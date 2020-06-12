@@ -1,4 +1,3 @@
-
 == 10. Fagområde og bruksområde
 
 *Hensikt*:
