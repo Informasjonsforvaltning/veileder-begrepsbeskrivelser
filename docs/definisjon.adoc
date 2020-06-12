@@ -1,6 +1,4 @@
-
-[[definisjon, definisjon]]
-== 6. Definisjon og Alternativ formulering
+== 6. Definisjon og Alternativ formulering [[definisjon, definisjon]]
 
 *Hensikt*:
 
