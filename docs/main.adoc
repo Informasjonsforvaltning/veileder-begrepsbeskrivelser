@@ -23,7 +23,8 @@ include::locale/attributes.adoc[]
 
 image::digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 
-*Publisert*: 15.03.2019
+*Publisert*: 15.03.2019 +
+*Oppdatert*: 03.05.2021
 
 include::shared/download.adoc[]
 
