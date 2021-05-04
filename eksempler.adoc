@@ -8,9 +8,9 @@ henhold til _Forvaltningsstandard for begrepsbeskrivelser_.
 [cols="1,2"]
 |===
 
-2+|Et informativt eksempel på en beskrivelse av et begrep, ved å bruke kun
-obligatorisk informasjon, der “(nb)” markerer at teksten er skrevet på
-bokmål.
+2+|Et informativt eksempel på en beskrivelse av et begrep, ved å bruke kun obligatorisk informasjon, der “(nb)” markerer at teksten er skrevet på bokmål. + 
+"Identifikator" og (organisasjonsnummeret til) "Ansvarlig virksomhet" er som regel systemgenerert av verktøyet som brukes til å fylle ut / publisere begrepsbeskrivelser, slik at du som vanlig bruker ikke trenger å fylle ut disse feltene.
+
 |*Anbefalt term* |heltidssysselsatt (nb)
 
 |*Definisjon* |person som har en avtalt ukentlig arbeidstid på 37 timer
@@ -31,7 +31,9 @@ sentralbyrå)
 
 2+|Et informativt eksempel som illustrerer bruk av flere felter fra
 standarden, der den obligatoriske informasjonen er *uthevet* og
-språkkode oppgitt i parentes (“(nn)” for nynorsk).
+språkkode oppgitt i parentes (“(nn)” for nynorsk). +
+"Identifikator" og (organisasjonsnummeret til) "Ansvarlig virksomhet" er som regel systemgenerert av verktøyet som brukes til å fylle ut / publisere begrepsbeskrivelser, slik at du som vanlig bruker ikke trenger å fylle ut disse feltene.
+
 |*Anbefalt term* |husdyr (nn)
 
 |*Definisjon* |dyr av ulike slag (pattedyr, fuglar, bier) som blir halde

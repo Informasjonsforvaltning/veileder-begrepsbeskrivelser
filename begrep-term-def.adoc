@@ -11,7 +11,7 @@ begrepsanalyse, begrepsbeskrivelser, begrepskoordinering og
 
 Man bør bygge arbeidet på de grunnleggende, terminologiske begrepene
 presentert i
-https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/standarder/termlosen[[.underline]#Termlosen#],
+https://data.norge.no/specification/termlosen/[Termlosen],
 og framstilt i en tilpasset og utvidet versjon av den semiotiske
 trekanten fra språkvitenskapen (se figur 1).
 
@@ -21,7 +21,7 @@ merkelappen», man fester til begrepet.
 
 
 
-.Forholdet mellom begrep, term, definisjon og referent (fra https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/standarder/termlosen[Termlosen], omgrep er nynorsk for begrep på bokmål)
+.Forholdet mellom begrep, term, definisjon og referent (fra https://data.norge.no/specification/termlosen/#kap1.1[Termlosen])
 [caption="Figur 1: "]
 image::begrep.png[]
 
