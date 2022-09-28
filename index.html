@@ -4,26 +4,24 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.15">
-<meta name="description" content="Mal for bruk til nye spesifikasjoner som er laga i asciidoc.">
-<title>Spesifikasjonsmal</title>
+<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="description" content="Veileder for bruk av Forvaltningsstandard for begrepsbeskrivelser">
+<title>Veileder for bruk av Forvaltningsstandard for begrepsbeskrivelser</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
-/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
-/* Uncomment @import statement to use as custom stylesheet */
-/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
-article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
-audio,video{display:inline-block}
-audio:not([controls]){display:none;height:0}
-html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
 a{background:none}
 a:focus{outline:thin dotted}
 a:active,a:hover{outline:0}
 h1{font-size:2em;margin:.67em 0}
-abbr[title]{border-bottom:1px dotted}
 b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
 dfn{font-style:italic}
-hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+hr{height:0}
 mark{background:#ff0;color:#000}
 code,kbd,pre,samp{font-family:monospace;font-size:1em}
 pre{white-space:pre-wrap}
@@ -35,20 +33,22 @@ sub{bottom:-.25em}
 img{border:0}
 svg:not(:root){overflow:hidden}
 figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
 fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
 legend{border:0;padding:0}
 button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
 button,input{line-height:normal}
 button,select{text-transform:none}
-button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
 button[disabled],html input[disabled]{cursor:default}
-input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+input[type=checkbox],input[type=radio]{padding:0}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
-*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+*,::before,::after{box-sizing:border-box}
 html,body{font-size:100%}
-body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
 a:hover{cursor:pointer}
 img,object,embed{max-width:100%;height:auto}
 object,embed{height:100%}
@@ -68,7 +68,7 @@ div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,
 a{color:#2156a5;text-decoration:underline;line-height:inherit}
 a:hover,a:focus{color:#1d4b8f}
 a img{border:0}
-p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
 p aside{font-size:.875em;line-height:1.35;font-style:italic}
 h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
 h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
@@ -77,14 +77,14 @@ h2{font-size:1.6875em}
 h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
 h4,h5{font-size:1.125em}
 h6{font-size:1em}
-hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
 em,i{font-style:italic;line-height:inherit}
 strong,b{font-weight:bold;line-height:inherit}
 small{font-size:60%;line-height:inherit}
 code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
-ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
-ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
 ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
 ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
@@ -92,8 +92,6 @@ ul.disc{list-style-type:disc}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
-abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
-abbr{text-transform:none}
 blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
 blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
 @media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
@@ -101,7 +99,7 @@ h1{font-size:2.75em}
 h2{font-size:2.3125em}
 h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
 h4{font-size:1.4375em}}
-table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede;word-wrap:normal}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
 table thead,table tfoot{background:#f7f8f7}
 table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
 table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
@@ -116,7 +114,7 @@ h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title str
 :not(pre).nobreak{word-wrap:normal}
 :not(pre).nowrap{white-space:nowrap}
 :not(pre).pre-wrap{white-space:pre-wrap}
-:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
 pre>code{display:block}
@@ -124,7 +122,7 @@ pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
 em em{font-style:normal}
 strong strong{font-weight:400}
 .keyseq{color:rgba(51,51,51,.8)}
-kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
 .keyseq kbd:first-child{margin-left:0}
 .keyseq kbd:last-child{margin-right:0}
 .menuseq,.menuref{color:#000}
@@ -136,7 +134,7 @@ b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
 b.button::before{content:"[";padding:0 3px 0 2px}
 b.button::after{content:"]";padding:0 2px 0 3px}
 p a>code:hover{color:rgba(0,0,0,.9)}
-#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
 #header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
 #header::after,#content::after,#footnotes::after,#footer::after{clear:both}
 #content{margin-top:1.25em}
@@ -144,7 +142,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
 #header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
-#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
 #header .details br{display:none}
@@ -178,11 +176,11 @@ body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9
 #toc.toc2>ul{font-size:.95em}
 #toc.toc2 ul ul{padding-left:1.25em}
 body.toc2.toc-right{padding-left:0;padding-right:20em}}
-#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
 #content #toc>:first-child{margin-top:0}
 #content #toc>:last-child{margin-bottom:0}
 #footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
-#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
 #content{margin-bottom:.625em}
 .sect1{padding-bottom:.625em}
 @media screen and (min-width:768px){#content{margin-bottom:1.25em}
@@ -195,29 +193,33 @@ body.toc2.toc-right{padding-left:0;padding-right:20em}}
 #content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
 #content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
 details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
-details>summary:first-of-type{cursor:pointer;display:list-item;outline:none;margin-bottom:.75em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
 .admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
 table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
-.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
-table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
 .admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
 .admonitionblock>table td.icon{text-align:center;width:80px}
 .admonitionblock>table td.icon img{max-width:none}
 .admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
-.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
 .exampleblock>.content>:first-child{margin-top:0}
 .exampleblock>.content>:last-child{margin-bottom:0}
-.sidebarblock{border-style:solid;border-width:1px;border-color:#dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
 .sidebarblock>:first-child{margin-top:0}
 .sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
 .exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
-.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
-.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
 .literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
 .listingblock>.content{position:relative}
 .listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
@@ -225,7 +227,7 @@ table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font
 .listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
 .listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
 .listingblock pre.highlightjs{padding:0}
-.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
 .listingblock pre.prettyprint{border-width:0}
 .prettyprint{background:#f7f7f8}
 pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
@@ -235,9 +237,8 @@ pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
 table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
 table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
 table.linenotable td.code{padding-left:.75em}
-table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;padding-right:.5em}
-pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
-pre.pygments .lineno::before{content:"";margin-right:-.125em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
 .quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
 .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
@@ -246,7 +247,7 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
 .quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
 .verseblock{margin:0 1em 1.25em}
-.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
 .verseblock pre strong{font-weight:400}
 .verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
 .quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
@@ -274,7 +275,7 @@ table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-c
 table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
 table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
 table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
-table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
 th.halign-left,td.halign-left{text-align:left}
 th.halign-right,td.halign-right{text-align:right}
 th.halign-center,td.halign-center{text-align:center}
@@ -290,14 +291,15 @@ ol{margin-left:1.75em}
 ul li ol{margin-left:1.5em}
 dl dd{margin-left:1.125em}
 dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
-ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
 ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
 ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
 ul.unstyled,ol.unstyled{margin-left:0}
-ul.checklist{margin-left:.625em}
-ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
-ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
-ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
 ul.inline>li{margin-left:1.25em}
 .unstyled dl dt{font-weight:400;font-style:normal}
 ol.arabic{list-style-type:decimal}
@@ -316,7 +318,7 @@ td.hdlist2{word-wrap:anywhere}
 .colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
 .colist td:not([class]):first-child img{max-width:none}
 .colist td:not([class]):last-child{padding:.25em 0}
-.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
 .imageblock.left{margin:.25em .625em 1.25em 0}
 .imageblock.right{margin:.25em 0 1.25em .625em}
 .imageblock>.title{margin-bottom:0}
@@ -336,8 +338,6 @@ sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
 #footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
 #footnotes .footnote:last-of-type{margin-bottom:0}
 #content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
-.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
-.gist .file-data>table td.line-data{width:99%}
 div.unbreakable{page-break-inside:avoid}
 .big{font-size:larger}
 .small{font-size:smaller}
@@ -384,7 +384,7 @@ a span.icon>.fa{cursor:inherit}
 .admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
 .admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
 .admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
-.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:50%;border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
 .conum[data-value] *{color:#fff!important}
 .conum[data-value]+b{display:none}
 .conum[data-value]::after{content:attr(data-value)}
@@ -392,19 +392,20 @@ pre .conum[data-value]{position:relative;top:-.125em}
 b.conum *{color:inherit!important}
 .conum:not([data-value]):empty{display:none}
 dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
-h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
-.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
 .print-only{display:none!important}
 @page{margin:1.25cm .75cm}
-@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
 html{font-size:80%}
 a{color:inherit!important;text-decoration:underline!important}
 a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
 a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
 abbr[title]::after{content:" (" attr(title) ")"}
 pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
 thead{display:table-header-group}
@@ -428,7 +429,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .print-only{display:block!important}
 .hide-for-print{display:none!important}
 .show-for-print{display:inherit!important}}
-@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
 .sect1{padding:0!important}
 .sect1+.sect1{border:0}
 #footer{background:none}
@@ -439,12 +440,41 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>Spesifikasjonsmal</h1>
+<h1>Veileder for bruk av Forvaltningsstandard for begrepsbeskrivelser</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Innholdsfortegnelse</div>
 <ul class="sectlevel1">
-<li><a href="#_forord">Forord</a></li>
-<li><a href="#_kapittel_1">Kapittel 1</a></li>
+<li><a href="#_1_innledning">1. Innledning</a>
+<ul class="sectlevel2">
+<li><a href="#_1_1_hensikt">1.1. Hensikt</a></li>
+<li><a href="#_1_2_omfang_og_avgrensning">1.2. Omfang og avgrensning</a></li>
+<li><a href="#_1_3_om_dette_dokumentet">1.3. Om dette dokumentet</a></li>
+</ul>
+</li>
+<li><a href="#_2_eksempler_på_begrepsbeskrivelser">2. Eksempler på begrepsbeskrivelser</a>
+<ul class="sectlevel2">
+<li><a href="#_2_1_beskrivelse_av_et_begrep_med_kun_obligatoriske_felter">2.1. Beskrivelse av et begrep, med kun obligatoriske felter</a></li>
+<li><a href="#_2_2_beskrivelse_av_et_begrep_også_med_noen_valgfrie_felter">2.2. Beskrivelse av et begrep, også med noen valgfrie felter</a></li>
+</ul>
+</li>
+<li><a href="#_3_begrep_term_definisjon_referent">3. Begrep - term - definisjon - referent</a></li>
+<li><a href="#_4_flerspråklighet">4. Flerspråklighet</a></li>
+<li><a href="#term">5. Term (Anbefalt, Tillatt, Frarådet term, Datastrukturterm)</a>
+<ul class="sectlevel2">
+<li><a href="#anbefalt">5.1. Anbefalt term</a></li>
+<li><a href="#_5_2_tillatt_term">5.2. Tillatt term</a></li>
+<li><a href="#_5_3_frarådet_term">5.3. Frarådet term</a></li>
+<li><a href="#_5_4_datastrukturterm">5.4. Datastrukturterm</a></li>
+</ul>
+</li>
+<li><a href="#definisjon">6. Definisjon og Alternativ formulering</a></li>
+<li><a href="#_7_målgruppe">7. Målgruppe</a></li>
+<li><a href="#gyldighetsperiode">8. Gyldighetsperiode, dato sist oppdatert, erstatter og erstattes av</a></li>
+<li><a href="#_9_relasjoner_mellom_begreper">9. Relasjoner mellom begreper</a></li>
+<li><a href="#_10_fagområde_og_bruksområde">10. Fagområde og bruksområde</a></li>
+<li><a href="#omfang">11. Omfang og eksempel</a></li>
+<li><a href="#_12_ansvarlig_virksomhet_og_kontaktpunkt">12. Ansvarlig virksomhet og kontaktpunkt</a></li>
+<li><a href="#_13_begrepssamling">13. Begrepssamling</a></li>
 </ul>
 </div>
 </div>
@@ -457,19 +487,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>Publisert: 2020-03-05</p>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Advarsel"></i>
-</td>
-<td class="content">
-Dette er mal-dokument for andre spesifikasjoner.
-</td>
-</tr>
-</table>
+<p><strong>Publisert</strong>: 15.03.2019<br>
+<strong>Oppdatert</strong>: 03.05.2021</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -478,8 +497,20 @@ Dette er mal-dokument for andre spesifikasjoner.
 <i class="fa icon-tip" title="Tips"></i>
 </td>
 <td class="content">
-Dette dokumentet kan også lastes ned <a href="veileder-begrepsbeskrivelser.pdf">som PDF</a>.
-Dersom det oppleves problemer med nedlastet utgave, eksempelvis bilder som mangler eller lenker som ikke fungerer, ber vi om at man benytter versjonen tilgjengelig på nett for de aktuelle delene.
+Dette dokumentet kan også lastes ned <a href="files/veileder-begrepsbeskrivelser.pdf">som PDF</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Merk"></i>
+</td>
+<td class="content">
+<strong>Innmelding av feil og mangler:</strong><br>
+Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på <a href="https://github.com/Informasjonsforvaltning/veileder-begrepsbeskrivelser/issues">Github Issues</a>. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 </td>
 </tr>
 </table>
@@ -487,24 +518,966 @@ Dersom det oppleves problemer med nedlastet utgave, eksempelvis bilder som mangl
 </div>
 </div>
 <div class="sect1">
-<h2 id="_forord"><a class="anchor" href="#_forord"></a>Forord</h2>
+<h2 id="_1_innledning"><a class="anchor" href="#_1_innledning"></a>1. Innledning</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_1_1_hensikt"><a class="anchor" href="#_1_1_hensikt"></a>1.1. Hensikt</h3>
 <div class="paragraph">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non augue dapibus, mollis odio vel, efficitur orci. Aenean venenatis orci a porta cursus. Suspendisse at commodo nulla, et sagittis neque. Maecenas pulvinar tellus vel tellus ultricies, sit amet tristique ex faucibus. Fusce sapien tellus, accumsan nec justo in, lobortis varius purus. Curabitur non libero lectus. Praesent accumsan quam sit amet luctus lobortis. Pellentesque augue dui, congue et felis eget, scelerisque porta enim. Proin iaculis placerat tincidunt. Cras nec gravida elit.</p>
+<p>Denne veilederen skal bidra til å gjøre det lettere å forstå og bruke
+<a href="https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/">Forvaltningsstandard
+for begrepsbeskrivelser</a>.</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_1_2_omfang_og_avgrensning"><a class="anchor" href="#_1_2_omfang_og_avgrensning"></a>1.2. Omfang og avgrensning</h3>
 <div class="paragraph">
-<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla id leo ac est condimentum tempus. Duis maximus tortor nec porttitor tincidunt. Donec eu mi sed libero pharetra semper quis in ex. Nunc mattis vitae libero eu rhoncus. Nam mattis magna ac tincidunt feugiat. Nulla ullamcorper, sem non volutpat varius, felis quam rhoncus massa, vitae pellentesque odio ligula a metus. Vestibulum commodo lacus eu odio posuere pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+<p>Veilederen har ikke som mål å gi veiledning til begrepsarbeid generelt,
+men er utarbeidet med vektlegging på begrepsbeskrivelser og bruk av
+standarden.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_3_om_dette_dokumentet"><a class="anchor" href="#_1_3_om_dette_dokumentet"></a>1.3. Om dette dokumentet</h3>
+<div class="paragraph">
+<p>Denne veilederen er utarbeidet av den samme arbeidsgruppen som
+utarbeidet forslag til <em>Forvaltningsstandard for begrepsbeskrivelser,
+versjon 2.0</em>. Veilederen er organisert etter ulike temaer som har vist
+seg å være viktige og til dels vanskelig å ta hensyn til i arbeidet med
+å beskrive begreper. Veilederen gir ikke en detaljert bruksanvisning for
+hvert enkelt felt i standarden.</p>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_kapittel_1"><a class="anchor" href="#_kapittel_1"></a>Kapittel 1</h2>
+<h2 id="_2_eksempler_på_begrepsbeskrivelser"><a class="anchor" href="#_2_eksempler_på_begrepsbeskrivelser"></a>2. Eksempler på begrepsbeskrivelser</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Etiam tempus neque porttitor enim congue, vel dictum odio aliquet. Sed massa lectus, pretium nec erat in, facilisis tincidunt lorem. Phasellus ut elit ut nibh aliquet sollicitudin a in elit. Duis dolor ligula, gravida ac eros sit amet, congue ultrices lacus. Curabitur ut tincidunt ipsum, ut aliquam ipsum. Phasellus vel elit eros. Duis pellentesque risus non sollicitudin bibendum. Donec ultrices mi lectus, id feugiat leo hendrerit a. Pellentesque in urna a elit cursus consectetur in et lacus. In hac habitasse platea dictumst. Cras scelerisque, nisl in dapibus malesuada, justo risus ornare sapien, a sagittis massa enim ut nisi. Ut varius augue justo, vel efficitur ipsum suscipit sed. Duis sollicitudin lobortis ligula sit amet sagittis.</p>
+<p>Dette kapitlet inneholder noen eksempler på begrepsbeskrivelser, i
+henhold til <em>Forvaltningsstandard for begrepsbeskrivelser</em>.</p>
+</div>
+<div class="sect2">
+<h3 id="_2_1_beskrivelse_av_et_begrep_med_kun_obligatoriske_felter"><a class="anchor" href="#_2_1_beskrivelse_av_et_begrep_med_kun_obligatoriske_felter"></a>2.1. Beskrivelse av et begrep, med kun obligatoriske felter</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Et informativt eksempel på en beskrivelse av et begrep, ved å bruke kun obligatorisk informasjon, der “(nb)” markerer at teksten er skrevet på bokmål.<br>
+"Identifikator" og (organisasjonsnummeret til) "Ansvarlig virksomhet" er som regel systemgenerert av verktøyet som brukes til å fylle ut / publisere begrepsbeskrivelser, slik at du som vanlig bruker ikke trenger å fylle ut disse feltene.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anbefalt term</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">heltidssysselsatt (nb)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Definisjon</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">person som har en avtalt ukentlig arbeidstid på 37 timer
+og mer, eller person som ved annen avtalt arbeidstid oppgir at dette
+utgjør heltid (nb)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Identifikator</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.ssb.no/a/metadata/conceptvariable/vardok/1127/nb"><span class="underline">https://www.ssb.no/a/metadata/conceptvariable/vardok/1127/nb</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ansvarlig virksomhet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">971 526 920 (organisasjonsnummer for Statistisk
+sentralbyrå)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_2_2_beskrivelse_av_et_begrep_også_med_noen_valgfrie_felter"><a class="anchor" href="#_2_2_beskrivelse_av_et_begrep_også_med_noen_valgfrie_felter"></a>2.2. Beskrivelse av et begrep, også med noen valgfrie felter</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Et informativt eksempel som illustrerer bruk av flere felter fra
+standarden, der den obligatoriske informasjonen er <strong>uthevet</strong> og
+språkkode oppgitt i parentes (“(nn)” for nynorsk).<br>
+"Identifikator" og (organisasjonsnummeret til) "Ansvarlig virksomhet" er som regel systemgenerert av verktøyet som brukes til å fylle ut / publisere begrepsbeskrivelser, slik at du som vanlig bruker ikke trenger å fylle ut disse feltene.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anbefalt term</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">husdyr (nn)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Definisjon</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dyr av ulike slag (pattedyr, fuglar, bier) som blir halde
+for nytteformål, til dømes for produksjon av produkt som mjølk, kjøt og
+ull, for al eller for trekkraft (nn)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Identifikator</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.ssb.no/a/metadata/conceptvariable/vardok/1243/nn"><span class="underline">https://www.ssb.no/a/metadata/conceptvariable/vardok/1243/nn</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ansvarlig virksomhet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">971 526 920 (organisasjonsnummer for Statistisk
+sentralbyrå)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merknad</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kjæledyr blir ikkje rekna som husdyr (nn)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fagområde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jordbruk, jakt og viltstell (nn)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Omfang</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.ssb.no/klass/klassifikasjoner/29">Standard for klassifisering av husdyr</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_begrep_term_definisjon_referent"><a class="anchor" href="#_3_begrep_term_definisjon_referent"></a>3. Begrep - term - definisjon - referent</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Hensikt</strong>:</p>
 </div>
 <div class="paragraph">
-<p>Vivamus elit massa, tempus vel bibendum non, fringilla sed ex. Mauris euismod neque et quam convallis gravida. Donec molestie nulla eget arcu molestie, et interdum neque auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec nec massa vel mauris pellentesque sollicitudin quis ut ante. Nulla malesuada pharetra ex, sit amet tincidunt mi dapibus ut. Aliquam erat volutpat. Sed sed quam sapien. Sed eu iaculis lacus, maximus interdum dolor.</p>
+<p>Beskrivelsen er tatt med for å hjelpe brukeren til å skille mellom
+begrep, term og definisjon i utarbeiding av termlister og i arbeid med
+begrepsanalyse, begrepsbeskrivelser, begrepskoordinering og
+-harmonisering.</p>
+</div>
+<div class="paragraph">
+<p><strong>Anbefaling</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Man bør bygge arbeidet på de grunnleggende, terminologiske begrepene
+presentert i
+<a href="https://data.norge.no/specification/termlosen/">Termlosen</a>,
+og framstilt i en tilpasset og utvidet versjon av den semiotiske
+trekanten fra språkvitenskapen (se figur 1).</p>
+</div>
+<div class="paragraph">
+<p>Et <em>begrep</em> (<em>omgrep</em> på nynorsk) viser til meningsinnholdet, altså
+betydningen, mens en <em>term</em> viser til selve navnet, «den språklige
+merkelappen», man fester til begrepet.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/begrep.png" alt="begrep">
+</div>
+<div class="title">Figur 1: Forholdet mellom begrep, term, definisjon og referent (fra <a href="https://data.norge.no/specification/termlosen/#kap1.1">Termlosen</a>)</div>
+</div>
+<div class="paragraph">
+<p>Når vi omtaler et begrep, benytter vi oss av termer (se <a href="#term">forklaring på term</a>). I noen tilfeller benytter vi oss av flere ulike termer for
+samme begrep. De er synonymer. Termer fra ulike språk kan også vise til
+samme begrep, som <em>tre, tree, arbre</em> og <em>Baum</em> i figur 1. De er
+ekvivalente termer.</p>
+</div>
+<div class="paragraph">
+<p>Ifølge konvensjonene skriver man <em>termen</em> i kursiv og ‘begrepet’ mellom
+enkle anførselstegn når man ønsker å skille mellom dem.</p>
+</div>
+<div class="paragraph">
+<p>Denne standarden legger til grunn begreper som er allmenne
+(allmennbegreper), dvs. ikke begreper som er knyttet til et produkt, en
+organisasjon eller virksomhet, en person, en publikasjon osv. Derfor
+omfatter standarden heller ikke termer som er egennavn, produktnavn
+eller liknende.</p>
+</div>
+<div class="paragraph">
+<p>Begrepet trer frem og blir forklart gjennom en definisjon (se <a href="#definisjon ">forklaring på definisjon</a>). En definisjon er en beskrivelse av begrepet som forklarer
+hva det betyr. Ifølge terminologisk teori skal denne beskrivelsen
+avgrense begrepet mot beslektede begreper.</p>
+</div>
+<div class="paragraph">
+<p>Referenten viser til de konkrete tingene ute i verden eller spesifikke
+abstrakte fenomener.</p>
+</div>
+<div class="paragraph">
+<p><strong>Eksempler</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Termene <em>tre, tree, arbre</em> og <em>Baum</em> viser til begrepet ‘tre’ (se figur
+1). Definisjonen lyder “vedplante med meir eller mindre høg og kraftig
+stamme, og greiner som går ut frå denne og ber kvister med blad (nåler),
+blomstrar og frukter” (Kilde:
+<a href="https://www.nb.no/items/f9708e6c01cc89e9843cc90db97babc8?page=0&amp;searchText=norsk%20landbruksordbok">Norsk landbruksordbok (1979)</a>). Denne definisjonen avgrenser ‘tre’ mot andre
+beslektede begreper, f.eks. ‘plante’, ‘bartre’ og ‘løvtre’. Referentene
+er trærne vi ser i skogen, parker etc.</p>
+</div>
+<div class="paragraph">
+<p>Termene <em>risikodekning, risikopensjon og risikoforsikring</em> viser til
+samme begrep (‘risikodekning’) i
+<a href="https://www.finansnorge.no/ordliste/?pageid=42026#p42026">Finans Norges termliste for pensjon</a>. Anbefalt term er <em>risikodekning</em>, mens
+<em>risikopensjon</em> og <em>risikoforsikring</em> er tillatte termer (synonymer).
+Definisjonen lyder “tilleggsforsikring til en alderspensjonsavtale som
+gir utbetaling ved uførhet og/eller død”. Referentene er den konkrete
+risikodekningen som hver og en av oss tegner med et forsikringsselskap.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_flerspråklighet"><a class="anchor" href="#_4_flerspråklighet"></a>4. Flerspråklighet</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Hensikt</strong>:</p>
+</div>
+<div class="paragraph">
+<p>For at man skal kunne kommunisere presist om begrepene på flere enn ett
+språk, gir <em>Forvaltningsstandard for begrepsbeskrivelser</em> mulighet til å
+spesifisere ulike språk på både term, definisjon og alternativ
+formulering:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>For hver forekomst av en term, om det er en ‘anbefalt term’, en ‘tillatt
+term’ eller en ‘frarådet term’, skal man oppgi språket som termen
+gjelder for.</p>
+</li>
+<li>
+<p>For hver forekomst av tekst for en ‘definisjon’ eller en ‘alternativ
+formulering’, gjelder det samme: Man skal oppgi språket som teksten
+gjelder for.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>På denne måten kan man beskrive et begrep i flere ulike språk.
+Standarden krever imidlertid at maksimalt én ‘anbefalt term’ er tillatt
+for hvert språk, dette for å unngå tvetydighet i kommunikasjonen.
+Tilsvarende krever standarden at maksimalt én ‘definisjon’ er tillatt
+for hvert språk.</p>
+</div>
+<div class="paragraph">
+<p><strong>Anbefaling</strong>:</p>
+</div>
+<div class="paragraph">
+<p>I begrepsarbeid regnes de to målformene bokmål og nynorsk som to ulike
+språk. Det bør oppgis anbefalt term for begge målformene parallelt (selv
+om standarden krever bare én anbefalt term som minimum). Standarden
+krever som minimum én definisjon i tillegg til én anbefalt term, uten å
+si at disse bør være i samme språk/målform eller ikke. Vi anbefaler å
+oppgi som minimum én anbefalt term og én definisjon i samme
+språk/målform. F.eks. anbefalt term og definisjon på nynorsk, dette i
+tillegg til også anbefalt term på bokmål som anbefalt foran (dvs.
+fortrinnsvis ikke bare en anbefalt term på nynorsk og en definisjon på
+bokmål, en mulig kombinasjon som standarden ikke utelukker). Vi
+anbefaler med andre ord følgende for ethvert begrep: definisjon på
+nynorsk <span class="underline">eller</span> bokmål, og anbefalt term på
+<span class="underline">både</span> nynorsk og bokmål.</p>
+</div>
+<div class="paragraph">
+<p>Det frarådes på det sterkeste å benytte språkkoden <em>no</em> (norsk) siden
+den ikke spesifiserer målform. Benytt heller språkkodene <em>nb</em> (bokmål)
+og <em>nn</em> (nynorsk).</p>
+</div>
+<div class="paragraph">
+<p><strong>Eksempler</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Term: <em>begrep</em> (nb); <em>omgrep</em> (nn); <em>concept</em> (en)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="term"><a class="anchor" href="#term"></a>5. Term (Anbefalt, Tillatt, Frarådet term, Datastrukturterm)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Dette kapitlet omhandler egenskapene til en term: Om en term er en
+‘anbefalt term’, en ‘tillatt term’, en ‘frarådet term’, eller en
+‘datastrukturterm’.</p>
+</div>
+<div class="sect2">
+<h3 id="anbefalt"><a class="anchor" href="#anbefalt"></a>5.1. Anbefalt term</h3>
+<div class="paragraph">
+<p><strong>Hensikt</strong>:</p>
+</div>
+<div class="paragraph">
+<p>For å få til kommunikasjon på en enklest mulig og mest presis måte bør
+hovedregelen være å føre opp samme anbefalt term for et gitt begrep
+uavhengig av målgruppe (‘allmennheten’ eller ‘fagspesialist’). Dette har
+standarden lagt til rette for, ved at man for et begrep alltid skal
+oppgi minst én anbefalt term, men maksimalt én anbefalt term per
+språk/målform.</p>
+</div>
+<div class="paragraph">
+<p><strong>Anbefaling</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Det er mest ønskelig å ha en felles anbefalt term uavhengig av
+målgruppe. Dersom det ikke er mulig, så skal den faglige termen være den
+anbefalte. Termer egnet for allmennheten skal da føres som tillatte
+termer.</p>
+</div>
+<div class="paragraph">
+<p><strong>Eksempler</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Anbefalt term: <em>term</em> (faglig uttrykk, for fagspesialister)</p>
+</li>
+<li>
+<p>Tillatt term: <em>navn</em> (folkelig uttrykk, for allmennheten)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_2_tillatt_term"><a class="anchor" href="#_5_2_tillatt_term"></a>5.2. Tillatt term</h3>
+<div class="paragraph">
+<p><strong>Hensikt</strong>:</p>
+</div>
+<div class="paragraph">
+<p>“Kjært barn har mange navn”. I tillegg til anbefalt term kan det være
+behov for å knytte flere termer til et gitt begrep når man vet at også
+disse brukes (eller kan brukes) i kommunikasjon om det aktuelle
+begrepet. Typiske eksempler er synonymer eller kortformtermer.
+Standarden legger til rette for dette ved at en term som også kan brukes
+på begrepet (i tillegg til den anbefalte termen), oppgis som tillatt
+term. Det kan knyttes flere tillatte termer til et begrep.</p>
+</div>
+<div class="paragraph">
+<p><strong>Anbefaling</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Listen over tillatte termer vil som regel ikke være uttømmende, men man
+bør oppgi termer som man vet blir brukt i kommunikasjon om et gitt
+begrep.</p>
+</div>
+<div class="paragraph">
+<p><strong>Eksempler</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Se eksemplene under <a href="#anbefalt">anbefalt term</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_3_frarådet_term"><a class="anchor" href="#_5_3_frarådet_term"></a>5.3. Frarådet term</h3>
+<div class="paragraph">
+<p><strong>Hensikt</strong>:</p>
+</div>
+<div class="paragraph">
+<p>For å unngå misforståelse i kommunikasjonen, bør det eksplisitt oppgis
+termer som man vet blir brukt, men ikke ønsker at skal brukes, på et
+gitt begrep. Dette er lagt til rette for i standarden, ved at man kan
+knytte en eller flere frarådde termer til et begrep.</p>
+</div>
+<div class="paragraph">
+<p><strong>Anbefaling</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Foreldede termer som ikke lenger skal brukes, bør oppgis som frarådde
+termer. Det samme gjelder termer som betegner begrep som egentlig betyr
+noe annet.</p>
+</div>
+<div class="paragraph">
+<p><strong>Eksempler</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ordene “begrep” og “term” skal ikke brukes om hverandre. Derfor er
+<em>begrep</em> en frarådet term for begrepet ‘term’, og <em>term</em> en frarådet
+term for begrepet ‘begrep’.</p>
+</li>
+<li>
+<p><em>Biltilsyn</em> er en foreldet term (den anbefalte termen nå er
+<em>trafikkstasjon</em>), og kan med fordel føres opp som en frarådet term.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_4_datastrukturterm"><a class="anchor" href="#_5_4_datastrukturterm"></a>5.4. Datastrukturterm</h3>
+<div class="paragraph">
+<p><strong>Hensikt</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Benyttes for å oppgi navn som brukes i tekniske sammenhenger til eks.
+XSDer og kode, der denne avviker fra anbefalt term</p>
+</div>
+<div class="paragraph">
+<p><strong>Anbefaling</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Datastrukturterm som man vet ofte brukes eller skal kunne brukes i
+kommunikasjonen, bør føres opp.</p>
+</div>
+<div class="paragraph">
+<p><strong>Eksempler</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>assosiativRelasjon, generiskRelasjon, partitivRelasjon</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="definisjon"><a class="anchor" href="#definisjon"></a>6. Definisjon og Alternativ formulering</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Hensikt</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Fordi begreper er abstrakte, trenger vi definisjoner og termer for å
+uttrykke dem og kommunisere om dem. En definisjon er et muntlig eller
+skriftlig utsagn som beskriver meningsinnholdet og avgrenser et begrep
+fra et annet. Definisjonen av et begrep i et gitt fagområdet eller
+bruksområde skal si noe om kjennetegnene til begrepet.</p>
+</div>
+<div class="paragraph">
+<p>Definisjonen er med på å forklare begrepet og avgrense det mot andre,
+beslektede begreper. Relasjonen til andre begreper bidrar dermed til å
+definere omfanget til et bestemt begrep..</p>
+</div>
+<div class="paragraph">
+<p><strong>Anbefaling</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Når man definerer begreper, skal man anvende kjennetegn som hver for seg
+eller sammen avgrenser begrepet og skiller det fra andre, beslektede
+begreper. Et tips er å la definisjonsteksten uttrykke det settet av
+kjennetegn som sier noe om hva fenomenet er, istedenfor å fokusere på
+hva det ikke er.</p>
+</div>
+<div class="paragraph">
+<p>En definisjon er oppbygd av et eller flere kjennetegn, fortrinnsvis satt
+sammen i én setning. Minst et av kjennetegnene bør være atskillende,
+dvs. det skiller begrepet fra andre, beslektede begreper. For eksempel
+inneholder definisjonen til ‘husdyr’ (se 2.2.) kjennetegnet ‘som blir
+halde for nytteformål’. Dette kjennetegnet gjør at begrepet skiller seg
+fra ‘kjæledyr’. I tillegg til dette atskillende kjennetegnet kan man
+legge til mer informasjon i såkalte supplerende kjennetegn. Slike
+supplerende kjennetegn gir ytterligere informasjon om begrepet.</p>
+</div>
+<div class="paragraph">
+<p>Et viktig prinsipp når man skriver en definisjon er
+utskiftingsprinsippet. Det innebærer at en term kan skiftes ut med
+definisjonen i en løpende tekst, med mindre justeringer. For å teste
+dette prinsippet kan man bytte ut termen og sette inn definisjonen.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://data.norge.no/specification/termlosen/">Termlosen</a>
+gir veiledning i skriving av definisjoner, bl.a. hvordan man bør tegne
+begrepssystem for å finne atskillende kjennetegn.</p>
+</div>
+<div class="paragraph">
+<p>Standarden krever at man til et gitt begrep kan oppgi maksimalt én (1)
+definisjon per språk. Alternative formuleringer brukes til å uttrykke
+definisjoner på ulike måter. Dersom de fleste begrepene i virksomheten
+har sitt opphav i regelverk eller fagtekster, kan alternative
+formuleringer typisk være “den folkelige forklaringen”, som kan benyttes
+ut til publikum og som er tilgjengelig for en større gruppe enn
+fagspesialister og jurister. Man kan også velge at den folkelige
+forklaringen er den “styrende/foretrukne” definisjonen, mens
+definisjonen som er hentet fra regelverket, blir merket/lagt inn som en
+alternativ formulering. Dette vil kunne variere ut fra virksomhetens
+forvaltningsområde og målgruppe. Betydningen i definisjonen og den
+alternative formuleringen skal alltid være den samme.</p>
+</div>
+<div class="paragraph">
+<p>Ulike virksomheter vil ha ulike behov når begrep skal defineres, også
+internt i virksomheten. Selv om offentlige virksomheter skal ha fokus på
+klarspråk, kan det i noen tilfeller være behov for å benytte en
+definisjon som ikke er i tråd med prinsippene for klarspråk. Et eksempel
+er begrep som kommer fra lovgivning. Her kan definisjonen være mest
+forståelig for rettsanvendere, og ikke like forståelig eller
+nødvendigvis intuitiv for allmennheten. Dette kan komme av at lovgiver
+har behov for å benytte avgrensninger innenfor en snevrere kontekst
+eller lovens/bestemmelsens virkeområde (f.eks. innsnevret tolkning av
+adopsjonsbegrepet i folketrygdloven), eller at definisjonene er skrevet
+på en annen tid (grunnloven, gammel straffelov, mv.). I de tilfeller
+hvor det finnes legaldefinisjoner eller andre typer definisjoner fra
+lovgivers side, bør virksomheten legge dette til grunn.</p>
+</div>
+<div class="paragraph">
+<p>Denne versjonen av standarden spesifiserer ikke hvordan man på en
+strukturert måte kan markere hva som er hhv. original eller oversettelse
+av en term eller en definisjon. Det anbefales å benytte fritekstfeltet
+“merknad” til dette formål.</p>
+</div>
+<div class="paragraph">
+<p><strong>Eksempler:</strong></p>
+</div>
+<div class="paragraph">
+<p>For begrepet ‘d-nummer’:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Definisjon: “identifikasjonsnummer som tildeles personer med midlertidig
+tilknytning til Norge, det vil si som ikke er bosatt i Norge.”</p>
+</li>
+<li>
+<p>Alternativ formulering som brukes i kommunikasjon med brukerne: “Et
+d-nummer er et midlertidig identifikasjonsnummer.”</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Både definisjonen og den alternative formuleringen inneholder det
+atskillende kjennetegnet ‘midlertidig’, som skiller begrepet fra det
+beslektede ‘fødselsnummer’.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_7_målgruppe"><a class="anchor" href="#_7_målgruppe"></a>7. Målgruppe</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Hensikt:</strong></p>
+</div>
+<div class="paragraph">
+<p>Visse virksomheter kan ha behov for å forklare begrepet på ulike måter
+avhengig av målgruppe. Eksempelvis kan en presis, teknisk definisjon
+være mest hensiktsmessig for fagfolk, mens begrepsbetydningen kan
+formuleres ved hjelp av et enklere og brukerorientert språk for
+allmennheten i en alternativ formulering.</p>
+</div>
+<div class="paragraph">
+<p><strong>Anbefaling:</strong></p>
+</div>
+<div class="paragraph">
+<p>Virksomheter som ønsker å benytte seg av muligheten for differensierte
+definisjoner og alternative formuleringer, bør utarbeide interne
+retningslinjer for konsekvent bruk av de to målgruppene. Disse
+retningslinjene bør avklare hvilke brukergrupper som regnes som fagfolk
+på forvaltningsområdet og hvilke brukergrupper som regnes som
+representerer allmennheten, gjerne med eksempler.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="gyldighetsperiode"><a class="anchor" href="#gyldighetsperiode"></a>8. Gyldighetsperiode, dato sist oppdatert, erstatter og erstattes av</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Hensikt</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Gyldighetsperiode brukes for å informere om hvilken tidsperiode en gitt
+begrepsbeskrivelse er gyldig for. At en begrepsbeskrivelse er gyldig,
+betyr at det er den gitte anbefalte termen og definisjonen som gjelder i
+(gyldighets)perioden. Dersom en har et begrep A som har én definisjon i
+perioden 2015–2016, og så justerer definisjonen i 2017, vil begrep A ha
+to gyldighetsperioder hvorav den siste er gjeldende. Dersom en i 2017
+skal arbeide med et datasett som dekker 2015, vil en bruke definisjonen
+som gjaldt for gyldighetsperioden 2015–2016.</p>
+</div>
+<div class="paragraph">
+<p><strong>Anbefaling</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Alle egenskaper ved en begrepsbeskrivelse kan endres. Endringene bør
+datostemples ved å bruke egenskapen dato sist oppdatert.</p>
+</div>
+<div class="paragraph">
+<p>Det er den som er faglig ansvarlig for et begrep, som bestemmer når det
+er nødvendig å definere en ny gyldighetsperiode eller når endringene er
+så store at man ikke vil lage en ny gyldighetsperiode for begrepet, men
+må etablere et nytt begrep.</p>
+</div>
+<div class="paragraph">
+<p>Det finnes ikke fasitsvar på hva som skal velges, men man bør vurdere
+blant annet følgende når man vurderer om det er behov for å opprette en
+ny gyldighetsperiode eller et nytt begrep:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Følgende endringer, alene, trenger som regel ikke å medføre oppretting
+av ny gyldighetsperiode:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>retting av skrivefeil eller mindre redaksjonelle justeringer i den
+anbefalte termen og/eller i definisjonen;</p>
+</li>
+<li>
+<p>endringer i andre egenskapene enn definisjon, anbefalt term og
+begrepsrelasjoner.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Ved følgende endringer bør man vurdere å opprette en ny
+gyldighetsperiode, forutsatt at man fremdeles snakker om
+<span class="underline">samme begrep</span>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>en ny term blir valgt som den anbefalte term;</p>
+</li>
+<li>
+<p>større justeringer i definisjonen;</p>
+</li>
+<li>
+<p>endring av utvalgskriterier/beregningsmetoder/o.l.;</p>
+</li>
+<li>
+<p>endring i begrepsrelasjoner tilknyttet begrepet, spesielt generiske
+og/eller partitive begrepsrelasjoner, som ikke medfører at det egentlig
+er et annet begrep man snakker om.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Ved følgende endringer bør man vurdere å opprette et nytt begrep:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>større endringer i definisjonen som gjør at man egentlig snakker om et
+annet begrep;</p>
+</li>
+<li>
+<p>endring i begrepsrelasjoner tilknyttet begrepet (se også forrige punkt),
+spesielt generiske og/eller partitive begrepsrelasjoner;</p>
+</li>
+<li>
+<p>større endringer i regimet for håndtering av data som begrepet
+representerer;</p>
+</li>
+<li>
+<p>større endringer i regelverket som regulerer anvendelsen av begrepet.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Når man vurderer at endringene er så store at man snakker om et annet
+begrep, skal det opprettes et nytt begrep som dermed får sin egen unike
+identifikator (URI). Relasjonene <em>erstatter</em> og <em>erstattes av</em> kan
+brukes til å relatere det nye til det gamle begrepet. Relasjonene
+<em>erstatter</em> og <em>erstattes av</em> skal ikke brukes mellom gyldighetsperioder
+for samme begrep.</p>
+</div>
+<div class="paragraph">
+<p>Begrepsbeskrivelser som ennå ikke skal tre i kraft, bør tydeliggjøres
+ved å bruke gyldighetsperiode som er frem i tid.</p>
+</div>
+<div class="paragraph">
+<p>Dersom et begrep har et tilknyttet omfang (se
+<a href="#omfang">forklaring på omfang</a>), er det
+viktig at gyldighetsperioden for ‘omfang’ ivaretas der ‘omfang’
+forvaltes (f.eks. der URIen skal peke på). Gyldighetsperioden for et
+begrep endrer seg vanligvis ikke selv om gyldighetsperioden for ‘omfang’
+endrer seg. Et eksempel er begrepet ‘sivilstand’ som per definisjon er
+“en persons stilling i forhold til ekteskapslovgivningen”. Verken term
+eller definisjon har endret seg på dette begrepet, men omfang har to
+ulike gyldighetsperioder: en som varte frem til 1993, og en ny f.o.m.
+1993 da partnerskap ble inkludert i omfang.</p>
+</div>
+<div class="paragraph">
+<p><strong>Eksempler</strong>:</p>
+</div>
+<div class="paragraph">
+<p><strong>Eksempel 1</strong>: Det ble opprettet en ny gyldighetsperiode for begrepet
+‘landbakgrunn’ da definisjonen ble justert i 2003.</p>
+</div>
+<div class="paragraph">
+<p>Fra 1994 til 2003 var ‘landbakgrunn’ definert som “For personer født i
+utlandet, er dette (med noen få unntak) eget fødeland. For personer født
+i Norge er det foreldrenes fødeland. I de tilfeller der foreldrene har
+ulikt fødeland, er det morens fødeland som blir valgt.”</p>
+</div>
+<div class="paragraph">
+<p>I 2003 ble definisjonen justert til: “For personer født i utlandet, er
+dette (med noen få unntak) eget fødeland. For personer født i Norge er
+det foreldrenes fødeland. I de tilfeller der foreldrene har ulikt
+fødeland, er det morens fødeland som blir valgt. Hvis ikke personen selv
+eller noen av foreldrene er utenlandsfødt, hentes landbakgrunn fra de
+første utenlandsfødte en treffer på i rekkefølgen mormor, morfar, farmor
+eller farfar.”</p>
+</div>
+<div class="paragraph">
+<p>Fagansvarlig anså at denne justeringen av definisjon ikke var stor nok
+til å etablere et nytt begrep, det var kun presiseringen som endret seg,
+ikke det semantiske innholdet som sådan.</p>
+</div>
+<div class="paragraph">
+<p><strong>Eksempel 2</strong>: I forbindelse med ny skatteforvaltningslov innførte
+lovgiver et begrep ‘skattemelding for formues- og inntektsskatt’, som i
+stor grad dekker innholdet i begrepet ‘selvangivelse’ som var det
+gjeldende frem til da. Men i og med at innføringen av ny
+skatteforvaltningslov også medførte innføring av prinsippet for
+egenfastsetting som hovedprinsipp (i motsetning til før, da
+myndighetsfastsetting var hovedprinsippet) samt endrede regimer for
+klageadgang og tilhørende praktiske rutiner, valgte Skatteetaten da å
+anse ‘skattemelding for formues- og inntektsskatt’ som et helt nytt
+begrep og ikke som en ny gyldighetsperiode for det gamle begrepet
+‘selvangivelse’, selv om begrepsomfanget i stor grad var det samme.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_9_relasjoner_mellom_begreper"><a class="anchor" href="#_9_relasjoner_mellom_begreper"></a>9. Relasjoner mellom begreper</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Hensikt</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Relasjoner brukes for å vise relevante sammenhenger mellom begreper. I
+standarden bruker vi tre ulike typer begrepsrelasjoner: generiske,
+partitive og assosiative, de samme som i
+<a href="https://data.norge.no/specification/termlosen/">Termlosen</a>.
+Se <a href="https://data.norge.no/specification/termlosen/">Termlosen</a> for forklaring på disse relasjonstypene.</p>
+</div>
+<div class="paragraph">
+<p>Standarden sier at den assosiative begrepsrelasjonen skal presiseres i
+en tekst, og man kan oppgi inndelingskriterium for en generisk eller
+partitiv relasjon.</p>
+</div>
+<div class="paragraph">
+<p><strong>Anbefaling</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Det er opp til fagansvarlig å vurdere om det vil være nyttig for
+brukerne å kjenne til relasjonene (dersom disse finnes) mellom et gitt
+begrep og andre begreper. Hvis en benytter assosiativ begrepsrelasjon,
+skal en alltid forklare i en tekst hva denne relasjonen går ut på.</p>
+</div>
+<div class="paragraph">
+<p><strong>Eksempler</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Generisk begrepsrelasjon</strong>: ‘bartre’ - ‘gran’ (‘gran’ er en
+spesifisering/underbegrep av ‘bartre’ - har alle egenskapene til bartre,
+pluss noen i tillegg); innenfor fagområdet ‘Inntekts- og formuesskatt’
+er ‘lønn’, ‘honorar’, ‘feriepenger’ alle spesialiseringer/underbegreper
+av det mere generiske begrepet ‘arbeidsinntekt’.</p>
+</li>
+<li>
+<p><strong>Partitiv begrepsrelasjon</strong>: En ‘studiesøknad’ (helheten) kan f.eks. ha
+delene ‘studieønske’ og ‘vitnemål’.</p>
+</li>
+<li>
+<p><strong>Assosiativ begrepsrelasjon</strong>: brann–røykutvikling (årsak–virkning).</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_10_fagområde_og_bruksområde"><a class="anchor" href="#_10_fagområde_og_bruksområde"></a>10. Fagområde og bruksområde</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Hensikt</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Standarden går ut ifra at et begrep har sitt opphav i ett gitt
+fagområde, men kan brukes i mange forskjellige sammenhenger. Det vil da
+være det respektive fagområdet, mer presist representanter for dette
+fagområdet, som vil ha definisjonsmakten over hvordan begrepet navngis,
+defineres og beskrives. Derimot kan i prinsipp “hvem som helst” bruke
+begrepet i sine respektive bruksområder, det være seg systemer,
+dokumenter, brukergrensesnitt, lovtekster osv.</p>
+</div>
+<div class="paragraph">
+<p>For å muliggjøre denne nyanseringen mellom opphav vs. bruksområder for
+et begrep, gir standarden mulighet til å beskrive ‘fagområde’ der man
+spesifiserer hvilket fag eller domene et begrep tilhører, og
+‘bruksområde’ der man kan oppgi hvor begrepet brukes.</p>
+</div>
+<div class="paragraph">
+<p><strong>Anbefaling</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Både fagområde og bruksområde er valgfrie felter. Arbeidsgruppen
+anbefaler likevel at man alltid spesifiserer fagområde, fordi dette gir
+en klar og konkret kontekst for begrepet som gjør det umiddelbart
+enklere for brukerne å få en første idé om hva begrepet kan handle om.</p>
+</div>
+<div class="paragraph">
+<p><strong>Eksempler</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Begrepet ‘helsetilstand’:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>fagområde = helse</p>
+</li>
+<li>
+<p>bruksområder (hos NAV) = hjelpemidler, trygdeytelser,
+arbeidsmarkedstiltak</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="omfang"><a class="anchor" href="#omfang"></a>11. Omfang og eksempel</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Hensikt</strong>:</p>
+</div>
+<div class="paragraph">
+<p>I noen tilfeller ønsker den ansvarlige virksomhet for et gitt begrep å
+regulere bruken av begrepet ved å oppgi verdiene begrepet kan anta.
+Dette er det lagt til rette for i standarden, ved at man kan knytte
+omfang (verdiområde) til et begrep. Eksempler på omfang kan være lovlige
+kodeverdier fra et kodeverk eller øvre og/eller nedre grense, f.eks.
+alle positive tall.</p>
+</div>
+<div class="paragraph">
+<p>Standarden legger også til rette for å kunne oppgi eksempler på et gitt
+begrep. Det kan benyttes til å nevne eksempler fra ‘omfang’, f.eks.
+Halden og Moss som eksempler fra listen over alle norske kommuner. Det
+kan også benyttes til å nevne eksempler på et begrep som ikke har et
+omfang, f.eks. “organisasjonsnummer”</p>
+</div>
+<div class="paragraph">
+<p><strong>Anbefaling</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Hva som er tillatte verdier for et datafelt kan gi nyttig informasjon
+for brukeren. Det anbefales derfor å oppgi omfang for et begrep når det
+finnes. Dersom omfanget beskrives ved et kodeverk, vil det oftest være
+mest hensiktsmessig å sette inn ei lenke til kodeverket, og ikke ta det
+med i selve begrepsbeskrivelsen.</p>
+</div>
+<div class="paragraph">
+<p>Det anbefaler ikke å ta med eksempler i selve definisjonen, men i
+eksempel.</p>
+</div>
+<div class="paragraph">
+<p>Se også under "<a href="#gyldighetsperiode">gyldighetsperiode m.m.</a>"
+for anbefalinger ang. gyldighetsperiode for beskrivelse av et begrep og
+gyldighetsperiode for omfang tilknyttet begrepet, f.eks.
+gyldighetsperiode for definisjonen av begrepet ‘kommune’ versus
+gyldighetsperiode for omfanget, dvs. lista over alle kommuner. Siden
+kommunene endrer seg over tid, vil denne lista ha ulike
+gyldighetsperioder.</p>
+</div>
+<div class="paragraph">
+<p><strong>Eksempler</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>Standard for sivilstand</em>
+(<a href="https://www.ssb.no/klass/klassifikasjoner/19">https://www.ssb.no/klass/klassifikasjoner/19</a>)
+oppgis som omfang for begrepet ‘sivilstand’.</p>
+</li>
+<li>
+<p>Listen over alle norske kommuner kan oppgis som omfang til begrepet
+‘kommune’.</p>
+</li>
+<li>
+<p>For begrepet “organisasjonsnummer” kan en bruke eksemplene 974 761 076
+(Skatteetaten) og 971 526 920 (Statistisk sentralbyrå)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_12_ansvarlig_virksomhet_og_kontaktpunkt"><a class="anchor" href="#_12_ansvarlig_virksomhet_og_kontaktpunkt"></a>12. Ansvarlig virksomhet og kontaktpunkt</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Hensikt</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Standarden har som mål å understøtte deling av begrepsbeskrivelser
+mellom offentlige virksomheter, og dermed økt gjenbruk av hverandres
+begrepsbeskrivelser. Det er derfor viktig å oppgi hvilken virksomhet som
+er eller har vært ansvarlig for en gitt begrepsbeskrivelse. Standarden
+krever derfor at det alltid skal oppgis virksomheten som er ansvarlig
+for beskrivelse av ethvert begrep. I tillegg legger standarden til rette
+for å kunne oppgi kontaktpunkt, som kan bistå f.eks. ved spørsmål
+vedrørende forståelse eller bruk av begrepet.</p>
+</div>
+<div class="paragraph">
+<p><strong>Anbefaling</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Det er den virksomhet som er ansvarlig for å beskrive et gitt begrep,
+som skal oppgis. Standarden krever også at virksomhetens
+organisasjonsnummer skal brukes, hvilket betyr at ikke alle
+organisatoriske underenheter kan oppgis som den ansvarlige. Kontaktpunkt
+kan ved behov brukes til å oppgi en organisatorisk underenhet. Det
+frarådes å bruke kontaktpunkter ned til enkeltpersoner i en virksomhet.</p>
+</div>
+<div class="paragraph">
+<p><strong>Eksempler</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ansvarlig virksomhet: 974 760 673 (Brønnøysundregistrene)</p>
+</li>
+<li>
+<p>Kontaktpunkt: Enhets-, Foretaks-, Frivillighets-, og Regnskapsregisteret
+ved Brønnøysundregistrene</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_13_begrepssamling"><a class="anchor" href="#_13_begrepssamling"></a>13. Begrepssamling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Hensikt</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Det kan av ulike grunner være behov for å samle sammen begreper,
+eksempelvis begreper som tilhører et gitt fagområde, begreper som
+beskriver de ulike delene av et bestemt datasett, begreper som beskriver
+en gitt digital tjeneste, eller begreper som tilhører et gitt
+bruksområde.</p>
+</div>
+<div class="paragraph">
+<p>Standarden legger til rette for å samle sammen begreper til en
+begrepssamling. Det er ikke stilt krav til at ethvert begrep må tilhøre
+minst en begrepssamling. Et begrep kan inngå i ingen, en eller flere
+begrepssamlinger.</p>
+</div>
+<div class="paragraph">
+<p><strong>Anbefaling</strong>:</p>
+</div>
+<div class="paragraph">
+<p>Bruk gruppering som er hensiktsmessig for din virksomhet. Standarden
+spesifiserer ikke krav til eller kriterier for hva som er hensiktsmessig
+gruppering.</p>
+</div>
+<div class="paragraph">
+<p><strong>Eksempler</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://begrep.difi.no/SikkerDigitalPost/begrep/">https://begrep.difi.no/SikkerDigitalPost/begrep/</a>
+er en samling av begreper som er relevante for tjenesten sikker digital
+post.</p>
+</li>
+<li>
+<p><a href="http://www.ssb.no/nasjonalregnskap-og-konjunkturer/begreper-i-nasjonalregnskapet">http://www.ssb.no/nasjonalregnskap-og-konjunkturer/begreper-i-nasjonalregnskapet</a>
+er en samling av begreper i nasjonalregnskapet.</p>
+</li>
+</ul>
 </div>
 <!-- Google Analytics -->
 <script>
@@ -522,7 +1495,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-05-06 09:25:55 UTC
+Sist oppdatert 2022-09-28 07:48:34 UTC
 </div>
 </div>
 </body>
