@@ -1,9 +1,9 @@
-name: build adocs and publsh v1 to productin (legacy)
+name: build adocs and publish to GitHub pages
 
 on:
   push:
     branches:
-      - v1
+      - develop
     paths:
       - "docs/**"
   workflow_dispatch:
@@ -15,8 +15,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          ref: v1
 
       - name: Build html
         id: adocbuild
@@ -35,5 +33,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: html
           publish_dir: ./docs
