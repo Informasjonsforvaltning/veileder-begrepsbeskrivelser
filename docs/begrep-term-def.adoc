@@ -4,8 +4,8 @@
 
 Beskrivelsen er tatt med for å hjelpe brukeren til å skille mellom
 begrep, term og definisjon i utarbeiding av termlister og i arbeid med
-begrepsanalyse, begrepsbeskrivelser, begrepskoordinering og
--harmonisering.
+begrepsanalyse, begrepsbeskrivelser, begrepsdifferensiering og
+begrepsharmonisering.
 
 *Anbefaling*:
 
@@ -38,7 +38,7 @@ enkle anførselstegn når man ønsker å skille mellom dem.
 Denne standarden legger til grunn begreper som er allmenne
 (allmennbegreper), dvs. ikke begreper som er knyttet til et produkt, en
 organisasjon eller virksomhet, en person, en publikasjon osv. Derfor
-omfatter standarden heller ikke termer som er egennavn, produktnavn
+omfatter standarden heller ikke betegnelser som er egennavn, produktnavn
 eller liknende.
 
 Begrepet trer frem og blir forklart gjennom en definisjon (se <<definisjon ,forklaring på definisjon>>). En definisjon er en beskrivelse av begrepet som forklarer
