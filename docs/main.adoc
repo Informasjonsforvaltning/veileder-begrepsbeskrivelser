@@ -10,10 +10,9 @@ Digitaliseringsdirektoratet (Digdir) / The Norwegian Digitalisation Agency
 ifdef::backend-pdf[:toc: macro]
 :toclevels: 2
 :sectanchors:
-:imagesdir: images
-:title-logo-image: Digdir.png[pdfwidth=30vw]
+:title-logo-image: image:images/Digdir.png[pdfwidth=30vw]
 
-image::Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
+image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 
 //:sectnums:
 
@@ -23,15 +22,16 @@ image::Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 
 // :leveloffset: +1
 
-toc::[]
 
 // Innhold her.
 
 *Status*: #utgått# + 
 *Publisert*: 15.03.2019 +
-*Oppdatert*: 27.02.2023 (veilederen markeres som utgått)
+*Oppdatert*: 15.03.2023 (veilederen markeres som utgått)
 
 WARNING: #Denne veilederen er utgått#. Den var ment for å forklare bruken av _Forvaltningsstandard for begrepsbeskrivelser_ som er blitt erstattet av https://data.norge.no/specification/skos-ap-no-begrep[_Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)_].  
+
+toc::[]
 
 include::innledning.adoc[]
 

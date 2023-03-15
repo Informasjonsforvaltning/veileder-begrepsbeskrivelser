@@ -23,7 +23,7 @@ merkelappen», man fester til begrepet.
 
 .Forholdet mellom begrep, term, definisjon og referent (fra https://data.norge.no/specification/termlosen/#kap1.1[Termlosen])
 [caption="Figur 1: "]
-image::begrep.png[]
+image::images/begrep.png[]
 
 
 
@@ -41,7 +41,7 @@ organisasjon eller virksomhet, en person, en publikasjon osv. Derfor
 omfatter standarden heller ikke betegnelser som er egennavn, produktnavn
 eller liknende.
 
-Begrepet trer frem og blir forklart gjennom en definisjon (se <<definisjon ,forklaring på definisjon>>). En definisjon er en beskrivelse av begrepet som forklarer
+Begrepet trer frem og blir forklart gjennom en definisjon (se <<definisjon,forklaring på definisjon>>). En definisjon er en beskrivelse av begrepet som forklarer
 hva det betyr. Ifølge terminologisk teori skal denne beskrivelsen
 avgrense begrepet mot beslektede begreper.
 
