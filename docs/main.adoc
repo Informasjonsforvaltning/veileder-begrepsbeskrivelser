@@ -27,7 +27,7 @@ image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 
 *Status*: #utgått# + 
 *Publisert*: 15.03.2019 +
-*Oppdatert*: 15.03.2023 (veilederen markeres som utgått)
+*Oppdatert*: 16.03.2023 (veilederen markeres som utgått)
 
 WARNING: #Denne veilederen er utgått#. Den var ment for å forklare bruken av _Forvaltningsstandard for begrepsbeskrivelser_ som er blitt erstattet av https://data.norge.no/specification/skos-ap-no-begrep[_Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)_].  
 
