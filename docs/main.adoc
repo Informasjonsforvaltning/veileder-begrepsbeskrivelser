@@ -64,4 +64,4 @@ include::ansvarlig.adoc[]
 include::begrepssamling.adoc[]
 
 
-// include::shared/stats.adoc[]
+include::shared/analytics.adoc[]
